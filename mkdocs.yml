@@ -13,19 +13,21 @@ theme:
     - search.highlight
     - search.suggest
   palette:
+    # Light mode
     - media: "(prefers-color-scheme: light)"
-      scheme: auburn-light
+      scheme: default  # Changed from auburn-light
       toggle:
         icon: material/brightness-7
         name: Switch to dark mode
+    # Dark mode
     - media: "(prefers-color-scheme: dark)"
-      scheme: auburn-dark
+      scheme: slate    # Changed from auburn-dark
       toggle:
         icon: material/brightness-4
         name: Switch to light mode
 
 extra_css:
-  - docs/stylesheets/auburn.css
+  - stylesheets/auburn.css  # Ensure this path is relative to the 'docs' folder
 
 markdown_extensions:
   - toc:
