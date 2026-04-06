@@ -1,11 +1,41 @@
 site_name: AUMB Handbook
+site_description: Auburn University Marching Band Handbook 2026-2027
+
 theme:
   name: material
   language: en
+  features:
+    - navigation.sections
+    - navigation.top
+    - navigation.tracking
+    - toc.follow
+    - toc.integrate
+    - search.highlight
+    - search.suggest
   palette:
-    - scheme: default
-      primary: indigo
-      media: "(prefers-color-scheme: light)"
-    - scheme: slate
-      primary: indigo
-      media: "(prefers-color-scheme: dark)"
+    - media: "(prefers-color-scheme: light)"
+      scheme: auburn-light
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: auburn-dark
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+
+extra_css:
+  - stylesheets/auburn.css
+
+markdown_extensions:
+  - toc:
+      permalink: true
+      permalink_title: "Link to this section"
+      toc_depth: 3
+  - attr_list
+  - md_in_html
+  - abbr
+
+plugins:
+  - search:
+      lang: en
