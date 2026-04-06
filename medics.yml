@@ -1,0 +1,11 @@
+site_name: AUMB Handbook
+theme:
+  name: material
+  language: en
+  palette:
+    - scheme: default
+      primary: indigo
+      media: "(prefers-color-scheme: light)"
+    - scheme: slate
+      primary: indigo
+      media: "(prefers-color-scheme: dark)"
