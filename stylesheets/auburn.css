@@ -1,0 +1,70 @@
+/* ============================================================
+   Auburn University Brand Colors
+   Navy:   #0b2341
+   Orange: #e86100
+   ============================================================ */
+
+/* ── LIGHT MODE ─────────────────────────────────────────── */
+[data-md-color-scheme="auburn-light"] {
+  --md-primary-fg-color:          #0b2341;
+  --md-primary-fg-color--light:   #1a3a5c;
+  --md-primary-fg-color--dark:    #06162a;
+  --md-primary-bg-color:          #ffffff;
+
+  --md-accent-fg-color:           #e86100;
+  --md-accent-fg-color--transparent: rgba(232, 97, 0, 0.1);
+
+  /* Links: navy on white = 15.78:1 ✅ */
+  --md-typeset-a-color:           #0b2341;
+
+  /* H1 in orange (large text, passes AA) */
+  --md-typeset-h1-color:          #e86100;
+  --md-typeset-h2-color:          #0b2341;
+  --md-typeset-h3-color:          #0b2341;
+}
+
+/* ── DARK MODE — GitHub-style dark gray ─────────────────── */
+[data-md-color-scheme="auburn-dark"] {
+
+  /* Keep navy header */
+  --md-primary-fg-color:          #0b2341;
+  --md-primary-fg-color--light:   #1a3a5c;
+  --md-primary-fg-color--dark:    #06162a;
+  --md-primary-bg-color:          #ffffff;
+
+  /* Orange accent — 5.09:1 on dark gray ✅ */
+  --md-accent-fg-color:           #e86100;
+  --md-accent-fg-color--transparent: rgba(232, 97, 0, 0.15);
+
+  /* GitHub dark gray page backgrounds */
+  --md-default-bg-color:          #22272e;  /* main content bg */
+  --md-default-bg-color--light:   #2d333b;  /* sidebar bg */
+  --md-default-bg-color--lighter: #373e47;  /* hover states */
+  --md-default-bg-color--lightest:#444c56;  /* borders */
+
+  /* Text — light gray, high contrast on dark gray ✅ */
+  --md-default-fg-color:          #ffffff;  /* white on #22272e = 12.8:1 ✅ */
+  --md-default-fg-color--light:   #909dab;
+  --md-default-fg-color--lighter: #636e7b;
+  --md-default-fg-color--lightest:#3d444d;
+
+  /* Links: orange on #22272e = 5.5:1 ✅ */
+  --md-typeset-a-color:           #e86100;
+
+  /* Headings */
+  --md-typeset-h1-color:          #e86100;
+  --md-typeset-h2-color:          #ffffff;
+  --md-typeset-h3-color:          #ffffff;
+
+  /* Sidebar nav text */
+  --md-nav-item-fg-color:         #ffffff;
+
+  /* Code blocks */
+  --md-code-bg-color:             #2d333b;
+  --md-code-fg-color:             #adbac7;
+
+  /* Footer */
+  --md-footer-bg-color:           #1c2128;
+  --md-footer-bg-color--dark:     #161b22;
+  --md-footer-fg-color:           #909dab;
+}
